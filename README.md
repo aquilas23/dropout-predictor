@@ -7,20 +7,6 @@ Here’s a **README.md** file for your dropout prediction model project, tailore
 
 This project leverages machine learning to predict student dropout risk using demographic and educational indicators from the Florida Department of Education. It uses an XGBoost classifier and features a web-based frontend for interaction.
 
-## Project Structure
-
-```
-
-dropout-predictor/
-├── app.py                    # Flask backend for API prediction
-├── dropout\_model.pkl        # Trained XGBoost model
-├── dropout\_data.csv         # Student-level dataset
-├── dropout.html             # HTML/JS frontend for predictions
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
-
-````
-
 ---
 
 ## Features
