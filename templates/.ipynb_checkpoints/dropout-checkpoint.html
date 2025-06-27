@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropout Risk Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #003d80;
+        }
+        .result {
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1> Dropout Risk Prediction</h1>
+    <form id="predictionForm">
+        <label for="at_risk">At Risk:</label>
+        <select id="at_risk">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label for="econ_dis">Economically Disadvantaged:</label>
+        <select id="econ_dis">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label for="ell">ELL Status:</label>
+        <select id="ell">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label for="homeless">Homeless:</label>
+        <select id="homeless">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <label for="disability">Disability:</label>
+        <select id="disability">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label for="race">Race:</label>
+        <select id="race">
+            <option value="0">Asian</option>
+            <option value="1">Black</option>
+            <option value="2">Hispanic</option>
+            <option value="3">White</option>
+            <option value="4">Other</option>
+        </select>
+
+        <button type="button" onclick="predict()">Predict Dropout Risk</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+    <script>
+        function predict() {
+            const inputs = {
+                'At Risk': parseInt(document.getElementById('at_risk').value),
+                'Economically Disadvantage': parseInt(document.getElementById('econ_dis').value),
+                'English Language Learner': parseInt(document.getElementById('ell').value),
+                'Homeless Student IND': parseInt(document.getElementById('homeless').value),
+                'Gender': parseInt(document.getElementById('gender').value),
+                'Student With Disablity': parseInt(document.getElementById('disability').value),
+                'Race': parseInt(document.getElementById('race').value)
+            };
+
+            // Placeholder for prediction response
+            document.getElementById('result').innerHTML =
+                "Prediction: [Placeholder]<br>Probability of Dropout: [Placeholder]";
+        }
+    </script>
+</body>
+</html>
