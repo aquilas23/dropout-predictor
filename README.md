@@ -3,7 +3,7 @@ Here’s a **README.md** file for your dropout prediction model project, tailore
 ---
 
 ```markdown
-# 🎓 Dropout Prediction Model
+# Dropout Prediction Model
 
 This project leverages machine learning to predict student dropout risk using demographic and educational indicators from the Florida Department of Education. It uses an XGBoost classifier and features a web-based frontend for interaction.
 
@@ -56,7 +56,7 @@ Open `dropout.html` in your browser and use the form to submit predictions.
 
 ---
 
-## 🔧 API Endpoint
+##  API Endpoint
 
 **POST** `/predict`
 
