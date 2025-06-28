@@ -87,8 +87,8 @@ Open `dropout.html` in your browser and use the form to submit predictions.
 
 ## Model Performance
 
-* **F1 Score**: 0.80
-* **AUC**: 0.91
+* **F1 Score**: 0.711
+* **AUC**: 0.631
 * Trained using `XGBoostClassifier` with SMOTE sampling and SHAP interpretability
 
 ---
