@@ -110,7 +110,7 @@ function predict() {
         "Race": parseInt(document.getElementById("race").value)
     };
 
-    fetch("http://127.0.0.1:5000/predict", {
+    fetch("https://dropout-predictor-4d7496c37c53.herokuapp.com/predict", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
